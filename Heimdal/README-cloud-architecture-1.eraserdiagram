@@ -1,0 +1,35 @@
+cloud-architecture-diagram
+
+app[icon: app]
+AWS-ACCOUNT[icon: aws-account]{
+  INFRA-DEV-ROLE[icon: paper-plane]
+  apiv2gateway[icon: aws-api-gateway]
+  lambda[icon: aws-lambda]
+  s3objectstorage[icon: aws-s3]
+  cognito{
+    user-client[icon: app]
+    user-pool[icon: user]{
+      the0xuser[icon: user, color: orange]
+    }
+    cognito-domain[icon: globe]
+  }
+  budget[icon: aws-budgets]
+  acm[icon: aws-acm]
+}
+email-alert[icon: envelope]
+social-alert[icon: slack, color: green]
+cloudflare{
+  primary-zone[icon: globe, color: orange]
+}
+github{
+  github-actions[icon: pulumi, color:blue]
+}
+developer[icon: user-check]
+
+developer -> github-actions -> INFRA-DEV-ROLE
+
+app -> apiv2gateway -> lambda -> s3objectstorage
+budget -> email-alert
+budget -> social-alert
+acm -> cognito-domain
+acm -> cloudflare
