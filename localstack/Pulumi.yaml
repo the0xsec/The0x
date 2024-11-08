@@ -1,0 +1,7 @@
+name: localstack
+description: A Starting Point For Localstack
+runtime: go
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-go
