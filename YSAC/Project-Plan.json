@@ -1,0 +1,154 @@
+{
+  "learningPath": [
+    {
+      "stage": 3,
+      "title": "Identity and Access Management (IAM)",
+      "duration": "2h 19m 56s",
+      "subtasks": [
+        "Understand IAM Concepts: Learn about IAM roles, users, groups, and policies.",
+        "Create IAM Users: Set up individual IAM users with unique credentials.",
+        "Create IAM Groups: Organize IAM users into groups for easier management.",
+        "Attach Policies to Users/Groups: Assign permissions using managed and inline policies.",
+        "Implement Multi-Factor Authentication (MFA): Enable MFA for IAM users to enhance security.",
+        "Review IAM Roles: Understand when to use roles instead of users for temporary access.",
+        "Audit IAM Configuration: Use AWS IAM Access Analyzer to review permissions and roles."
+      ],
+      "project": "Create an IAM user and policy using Terraform."
+    },
+    {
+      "stage": 4,
+      "title": "Simple Storage Service (S3)",
+      "duration": "3h 22m 32s",
+      "subtasks": [
+        "Create S3 Buckets: Set up S3 buckets with appropriate naming conventions.",
+        "Configure Bucket Policies: Define access permissions for buckets and objects.",
+        "Enable Versioning: Activate versioning to keep multiple versions of objects.",
+        "Set Lifecycle Policies: Create rules to manage object lifecycle and storage class transitions.",
+        "Upload and Manage Objects: Practice uploading, copying, and deleting objects in S3.",
+        "Implement Static Website Hosting: Configure an S3 bucket for static website hosting.",
+        "Monitor S3 with CloudWatch: Set up CloudWatch metrics and alarms for S3 usage."
+      ],
+      "project": "Manage S3 bucket creation and policy with Terraform."
+    },
+    {
+      "stage": 5,
+      "title": "Elastic Compute Cloud (EC2)",
+      "duration": "4h 22m 34s",
+      "subtasks": [
+        "Launch EC2 Instances: Create EC2 instances using various Amazon Machine Images (AMIs).",
+        "Configure Security Groups: Set up security groups to control inbound and outbound traffic.",
+        "Create Key Pairs: Generate key pairs for secure SSH access to EC2 instances.",
+        "Elastic IP Addresses: Allocate and associate Elastic IP addresses with EC2 instances.",
+        "Create AMIs: Create Amazon Machine Images from running instances for backups or scaling.",
+        "Monitor EC2 Instances: Use CloudWatch to track performance metrics and set alarms.",
+        "Terminate Instances: Safely terminate EC2 instances and understand the implications."
+      ],
+      "project": "Provision EC2 instances with specific configurations using Terraform."
+    },
+    {
+      "stage": 6,
+      "title": "Elastic Block Storage (EBS) and EFS",
+      "duration": "2h 30m 38s",
+      "subtasks": [
+        "Create EBS Volumes: Provision EBS volumes and attach them to EC2 instances.",
+        "Snapshot EBS Volumes: Create snapshots for backup and recovery purposes.",
+        "Resize EBS Volumes: Understand how to modify the size of EBS volumes without downtime.",
+        "Create and Configure EFS: Set up an Elastic File System (EFS) for shared storage across instances.",
+        "Mount EFS on EC2 Instances: Learn how to mount EFS to EC2 instances for access.",
+        "Implement EBS Encryption: Enable encryption for EBS volumes for enhanced security.",
+        "Monitor EBS and EFS Performance: Use CloudWatch to monitor performance metrics."
+      ],
+      "project": "Create EBS volumes and EFS file systems using Terraform."
+    },
+    {
+      "stage": 7,
+      "title": "Networking Basics",
+      "duration": "2h 48m 18s",
+      "subtasks": [
+        "Create a VPC: Set up a Virtual Private Cloud (VPC) with custom CIDR blocks.",
+        "Configure Subnets: Create public and private subnets within the VPC.",
+        "Set Up Route Tables: Define route tables to control traffic flow within the VPC.",
+        "Implement Internet Gateway: Attach an Internet Gateway to allow internet access to public subnets.",
+        "Create NAT Gateway: Set up a NAT Gateway for private subnet instances to access the internet.",
+        "Configure Security Groups and NACLs: Implement security groups and Network ACLs for traffic control.",
+        "Launch EC2 Instances in VPC: Deploy EC2 instances within the configured VPC and subnets."
+      ],
+      "project": "Create a VPC with subnets and routing using Terraform."
+    },
+    {
+      "stage": 8,
+      "title": "Databases Overview",
+      "duration": "2h 47m 32s",
+      "subtasks": [
+        "Launch an RDS Instance: Create a relational database instance using Amazon RDS.",
+        "Configure Database Security: Set up security groups and parameter groups for RDS.",
+        "Backup and Restore RDS: Understand how to perform backups and restore RDS databases.",
+        "Monitor RDS Performance: Use CloudWatch to monitor RDS instance metrics.",
+        "Scale RDS Instances: Learn about scaling options for RDS instances (read replicas, vertical scaling).",
+        "Implement Multi-AZ Deployments: Set up Multi-AZ for high availability.",
+        "Connect to RDS from EC2: Practice connecting an EC2 instance to the RDS database."
+      ],
+      "project": "Provision an RDS database instance using Terraform."
+    },
+    {
+      "stage": 9,
+      "title": "Monitoring and Logging",
+      "duration": "3h 1m 28s",
+      "subtasks": [
+        "Set Up CloudWatch Alarms: Create alarms for EC2, RDS, and S3 metrics.",
+        "Implement CloudTrail: Enable AWS CloudTrail for API call logging.",
+        "Create CloudWatch Dashboards: Visualize metrics using CloudWatch dashboards.",
+        "Log Management: Set up logging for EC2 instances and S3 buckets.",
+        "Use AWS Config: Implement AWS Config to monitor resource configurations.",
+        "Analyze Logs with CloudWatch Logs Insights: Query and analyze logs for troubleshooting.",
+        "Integrate with SNS for Notifications: Set up Simple Notification Service (SNS) for alarm notifications."
+      ],
+      "project": "Configure CloudWatch monitoring and logging using Terraform."
+    },
+    {
+      "stage": 10,
+      "title": "High Availability and Scaling",
+      "duration": "1h 50m 48s",
+      "subtasks": [
+        "Create Auto Scaling Groups: Define policies for scaling EC2 instances based on demand.",
+        "Set Up Load Balancers: Implement Application Load Balancers (ALB) for distributing traffic.",
+        "Configure Health Checks: Set health check rules for instances behind load balancers.",
+        "Implement Elastic Load Balancing: Understand different types of load balancers (ALB, NLB).",
+        "Test Auto Scaling Policies: Simulate load to test the auto scaling configuration.",
+        "Design for Failover: Implement strategies for failover and redundancy.",
+        "Monitor Auto Scaling Events: Use CloudWatch to monitor scaling events and performance."
+      ],
+      "project": "Create an Auto Scaling group and load balancer using Terraform."
+    },
+    {
+      "stage": 11,
+      "title": "Security Best Practices",
+      "duration": "2h 41m 5s",
+      "subtasks": [
+        "Conduct a Security Review: Review existing IAM roles, policies, and permissions.",
+        "Implement Least Privilege Access: Adjust IAM policies to follow least privilege principles.",
+        "Configure Security Groups: Regularly review and update security group rules.",
+        "Enable AWS Config Rules: Set up AWS Config rules to monitor compliance.",
+        "Implement Encryption: Enable encryption for S3, EBS, and RDS.",
+        "Set Up GuardDuty: Enable Amazon GuardDuty for threat detection.",
+        "Regular Audits and Reporting: Schedule regular audits and generate security reports."
+      ],
+      "project": "Apply security best practices with Terraform configurations."
+    },
+    {
+      "stage": 12,
+      "title": "Exam Preparation",
+      "duration": "10h 33m 43s",
+      "subtasks": [
+        "Take Practice Exams: Use practice tests to gauge knowledge and readiness.",
+        "Review Key Concepts: Go through flashcards or summaries of key topics.",
+        "Engage in Hands-On Labs: Participate in hands-on labs to reinforce learning.",
+        "Join Study Groups: Collaborate with peers for discussion and clarification.",
+        "Review AWS Documentation: Familiarize yourself with the official AWS documentation.",
+        "Create a Study Schedule: Plan study sessions leading up to the exam date.",
+        "Relax and Prepare Mentally: Ensure to take breaks and manage stress before the exam."
+      ],
+      "project": "Compile notes and resources for exam preparation."
+    }
+  ]
+}
