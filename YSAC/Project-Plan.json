@@ -1,6 +1,13 @@
 {
   "awsSAA": [
     {
+      "title": "Setup CICD"
+      "goal": "Setup up a Github actions runner for CICD Terraform runs"
+      "subtasks": [
+        "do the goal"
+      ]
+    },
+    {
       "title": "IAM",
       "goal": "Learn about IAM roles, users, groups, and policies."
       "subtasks": [
